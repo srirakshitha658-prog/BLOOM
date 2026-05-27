@@ -316,47 +316,7 @@ a.click();
 
 ---
 
-## 🎵 Spotify Integration
 
-The app ships with a **demo Spotify widget** that simulates playback UI. To connect real Spotify:
-
-### Step 1 — Register your app
-
-1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
-2. Create a new app
-3. Add your domain to **Redirect URIs**
-4. Copy your **Client ID**
-
-### Step 2 — Add OAuth flow
-
-Replace the `connectSpotify()` function in `bloompln.html`:
-
-```javascript
-const CLIENT_ID = 'YOUR_SPOTIFY_CLIENT_ID';
-const REDIRECT_URI = 'https://your-domain.com/bloompln.html';
-const SCOPES = 'user-read-playback-state user-modify-playback-state user-read-currently-playing';
-
-function connectSpotify() {
-  const authUrl = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${encodeURIComponent(SCOPES)}`;
-  window.location.href = authUrl;
-}
-```
-
-### Step 3 — Handle the token on return
-
-```javascript
-const hash = window.location.hash.substring(1);
-const params = new URLSearchParams(hash);
-const token = params.get('access_token');
-if (token) {
-  localStorage.setItem('spotify_token', token);
-  fetchNowPlaying(token);
-}
-```
-
-<br/>
-
----
 
 ## 📶 PWA & Offline Mode
 
