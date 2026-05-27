@@ -181,7 +181,7 @@ Bloom Planner is intentionally dependency-free. This means:
 
 ```bash
 # Download the file and open it
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/bloom-planner/main/bloompln.html
+curl -O https://raw.githubusercontent.com/srirakshitha658-prog/bloom-planner/main/bloompln.html
 open bloompln.html     # macOS
 start bloompln.html    # Windows
 xdg-open bloompln.html # Linux
@@ -196,7 +196,7 @@ That's it. No install. No terminal. Works offline.
 1. Fork this repository
 2. Go to **Settings → Pages**
 3. Set source to `main` branch, root `/`
-4. Your app is live at `https://YOUR_USERNAME.github.io/bloom-planner/bloompln.html`
+4. Your app is live at `https://srirakshitha658-prog.github.io/bloom-planner/bloompln.html`
 
 ---
 
@@ -204,7 +204,7 @@ That's it. No install. No terminal. Works offline.
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/bloom-planner.git
+git clone https://github.com/srirakshitha658-prog/bloom-planner.git
 cd bloom-planner
 
 # Serve locally (Python — comes pre-installed on most systems)
@@ -519,7 +519,7 @@ Contributions are warmly welcomed! Whether it's a bug fix, a new feature, or jus
 ```bash
 # 1. Fork the repository
 # 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/bloom-planner.git
+git clone https://github.com/srirakshitha658-prog/bloom-planner.git
 
 # 3. Create a feature branch
 git checkout -b feature/your-amazing-feature
